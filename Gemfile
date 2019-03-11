@@ -10,6 +10,7 @@ gem 'pg'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 #end of add-on gems
 
