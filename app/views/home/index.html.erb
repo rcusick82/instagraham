@@ -6,7 +6,7 @@
     <%= f.file_field :images %>
   </div>
   <div class="form-group">
-    <%= f.text_field :user_id, value: current_user, class:'d-none'%>
+    <% f.text_field :user_id, value: current_user, class:'d-none' %>
   </div>
   <br>
   <div class="text-center">
@@ -17,8 +17,19 @@
 
 <div class="posts">
   <% @posts.each do |post| %>
-    <section class="post">
-      <!-- post view -->
-    </section>
+  <section class="post">
+<div class="user">
+  <div class="avatar">
+    <%= post.image %>
+  </div>
+  <div class="username">
+    <%= post.user.username %>
+  </div>
+</div>
+<%= post.image %>
+<div class="description">
+  <%= post.description %>
+</div>
+</section>
   <% end %>
 </div>
